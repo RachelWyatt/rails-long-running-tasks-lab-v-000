@@ -7,7 +7,7 @@
 <%= link_to "Add New Song", new_song_path %>
 <h1>Our Songs</h1>
 <%= form_tag songs_upload_path, multipart: true do %>
-  <%= file_field_tag :songs %>
+  <%= file_field_tag :file %>
   <%= submit_tag "Songs" %>
 <% end %>
 <ul>
